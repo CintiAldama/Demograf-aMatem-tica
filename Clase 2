@@ -1,0 +1,9 @@
+install.packages("dplyr")
+require (dplyr)
+mundo <- as_tibble(read.csv(file.choose()))
+nic <- mundo %>%
+  as_tibble() %>%
+  filter(iso_code== "NIC") %>%
+mutate (acumulado =cumsum (new_cases)) %>%
+  filter(between (acumulado, 1000, 3000))
+  select(date, total_cases, total_deaths, iso_code, aged_70_older, acumlado, extreme_poverty)
