@@ -1,0 +1,127 @@
+---
+title: "Diagrama de lexis"
+author: "Aldama Cintia"
+date: '2022-03-11'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# **Diagrama de lexis**  *(linea de vida)*  
+
+El diagrama de lexis ayuda a comprender algunos eventos y fenomenos demograficos a traves de una linea en el tiempo.
+Delimitación temporal en demografía es escencial en el tiempo como un elemento indispensable para anlizar la dinamica constante y cambios en espacios poblacionales.  
+En particular en la demografia podemos definir dos tiempos:  
+   _1) Tiempo calendario_  
+   _2) Tiempo de eventos demográficos_  
+   
+   Por ejemplo: edad se puede medir en dos sentidos, por un lado se mide a partir del 
+   nacimiento. Por el otro se puede medir en años cumplidos (aniversario).
+   En demografía existe el oncepto de edad exacta.  
+   Este concepto de edad exacta se puede ejemplificar de la siguiente manera:  
+    Supongamos que una persona nacio el 23 de julio de 1985 y queremos saber su edad exacta al 
+    día de hoy, es decir, cuantos años exactos tiene al 11 de marzo de 2022... han transcurrido 
+    262 días hasta el 11 de marzo de 2022.
+    
+    36 años 262 días... 36+ (262/365)... Edad exacta 36.72
+    
+    _Representación gráfica_  
+    
+    Un elemento importante que interesa en los fenomenos demográficos es el número de eventos 
+    que ocurren a través del tiempo,
+    en este sentido, en el diagrama de lexis se puede representar los nacimientos, las 
+    defunciones, matrimonioos, etc. este
+    diagrama seran tomados los años calendario y las edades cumplidas.  
+    
+    Flujo: Con la población que permanece ene l tiempo.  
+    Efectivo: Ocurrencia de un evento en un tiempo determinado.  
+    Coherte: Un grupo de indsividuos que experimentan un evento durante un tiempo determinado.  
+    Generación: Un grupo de individuos que nace en un momento determinado.  
+    
+    
+    Ahora vamos a plantear algunos eventos demograficos que ocurren en el diagrama plateado  
+    
+    ab= 1990  
+    ac+bd= dos líneas de vida  
+    abc= defunciones de 1990  
+    cbd= defunciones de 1991  
+    
+    
+    Digamos que en demografía se pueden plantear tres tipos de annálisis:  
+    
+      1) Análisis transversal que se asocia a un momento en el tiempo  
+      
+      2) Aná lisis longitudinal que se vincula con estudios a tráves del tiempo, es decir, 
+      análisis de una generación o análisis de una cohorte  
+      
+      3) Análisis retrospectivos se vincula con los estudios que se realizan en un tiempo     
+      pasado, es decir, el análisis de vida de una población adulta mayor durante su juventud.  
+      
+      
+      En particular vamos a ver el análisis longitudinal que se relaciona con el diagrama, uno 
+      de los aspectos importantes del diagrama de lexis tiene que ver con análisis 
+      longitudinales.  
+      Por ejemplo. los nacimientos, las defunciones, la nupcialidad, se les llama eventos 
+      demograficos, de estos eventos surgen fenomenos demograficos, como la fecundidad, la 
+      mortalidad y la migración.  
+      
+      
+
+
+# **MEDIDAS EN DEMOGRAFÍA**  
+
+  **MEDIDAS RELATIVAS**  
+  
+  Razones: es el cociente entre dos magnitudes independientes, por ejemplo:  
+  Población masculina / Población femenina ... Cuantos himbres hay con respecto a la población 
+  femenina  
+  
+  Proporciones: es la relacion entre dos medidas de efectivos o flujo, ejemplo:  
+  Poblaión masculina / poblacion total ... Proporción de hombres con respecto a la población 
+  total  
+  
+  Nacimiento de hombres / Nacimientos totales ... número de hombres por cada nacimiento 
+  ocurrido...  
+  
+  Tasa: es el cociente entre un flujo y un efectivo, ejemplo:  
+  Nacimientos en un año / Población masculina  
+  
+  
+  _EJEMPLO DE RAZÓN:_  
+  
+  Población masculina / Población femenina = 45421/46185 ... Por cada 100 mujeres hay 98.3 
+  hombres!!!  
+  Pob. masculina = 45421  
+  Pob. femenina = 46185  
+  
+  
+  
+  _EJEMPLO DE PROPORCIÓN:_  
+  
+  Poblaión masculina / poblacion total = 45421/91601 = 0.4958 LA PROPORCIÓN DE HOMBRES EN LA 
+  POBLACIÓN ES DE 0.49, si traducimoa a porcentajes multiplicando por 100 podriamos señalar 
+  por cada 100 habitantes 49 son hombres.  
+  
+  Pob. masculina = 45421  
+  Pob. total = 91601  
+  
+  
+  _EJEMPLO DE TASAS:_  
+  
+  Tasa de nacimiento = nacimientos en un año / población total = 2290/92394 = 0.02478 y se 
+  interpreta que por cada 1000 habitantes nacen 84 personas...  
+  Nacimientos = 2290  
+  Pob = 92394  
+  
+  
+  Tasa de cecimeinto poblacional = (nacimientos - defunciones) / población a mitad de año = 
+  (2290-420)/92394 = 0.0202, si lo multiplicamos por 100 tendríamos una tasa de 20.2 y se 
+  interpreta que por cada 10 habitantes hay un incremento de 20 habitantes.  
+  Ejemplo:  
+  Nacimientos = 2290  
+  Defunciones = 420  
+  Pob = 92394  
+  
+  Tasa de crecimiento social
