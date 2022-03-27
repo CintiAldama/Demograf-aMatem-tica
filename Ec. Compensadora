@@ -1,0 +1,81 @@
+---
+title: "Ec. Com."
+author: "Aldama Cintia"
+date: '2022-03-27'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+# **Ecuación Compensadora**  
+*(Nos permite conocer la población actual)*  
+
+Ecuación compensadora es una de los principales elementos de la demografía y se plantea de la siguiente manera:  
+
+      ----> $P_{t+n}$ = $P_{t}+N_{t->t+n}-D_{t->t+n}+I_{t->t+n}-E_{t->t+n}$   
+      ----> $P_{2022}$ = $P_{2021} + N_{2021 al 2022} +D_{2021 al 2022} +I_{2021 al 2022} -E_{2021 al 2022}$  
+      
+        N: Nacimientos
+        D: defunciones
+        I: inmigrantes
+        E: emigrantes
+        
+      ----> P_t+n-P_t = (N_t+n+D_t+n)+(I_t+n-E_t+n)
+      
+                   CP = CN + CS
+                     CP: Crecimiento poblacional
+                     CN: Crecimiento natural
+                     CS: Crecimiento social
+
+
+Pob_2004= 293,657,000
+Pob_2005= 296,410,000
+N_2004-2005= 4,129,000
+D_2004-2005= 2,425,000
+I_2004-2005= 1,122,000
+E_2004-2005= 73,000
+
+   ----> P_t+n-P_t = (N_t+n+D_t+n)+(I_t+n-E_t+n)
+   
+   ----> (296,410,000-293,657,000) = (4,129,000+2,425,000) + (1,122,000-73,000)
+            
+            CP: Crecimiento poblacional = 27530000
+            CN: Crecimiento natural = 1704000
+            CS: Crecimiento social = 1049000
+            
+
+
+  P_t+n=P_t+N_t+n-D_t+n+I_t+n-E_t+n+î_t+n-E_t+n
+  
+  CP = CN + CS_I + CS_î
+  
+    I_t+n-E_t+n: Migración Internacional
+    
+    î_t+n-E_t+n : Migración Interna
+    
+    
+
+TASAS DE CRECIMIENTO POBLACIONAL
+
+  1) Tasa de crecimiento anual (Población)
+  
+     ---> TCA = (P_t+1-P_t)/P_t
+     
+          TCA = (296,410,000-293,657,000)/293,657 = 0.009357
+                                                  = 0.9357%
+  
+  2) Tasa de crecimiento exponencial (Población)
+   
+     ---> TCE = P_t * e^(r*n)
+     
+          TCE= 
+       
+        Donde:
+          P_t : Población inicial
+          r = tasa de crecimiento exponencial
+          n = Número de años
