@@ -1,0 +1,130 @@
+---
+title: "Tiempo de duplicidad"
+author: "Aldama Cintia"
+date: '2022-03-25'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+# **Tiempo de Duplicidad de una Población**  
+
+Lo que se intenta plantear y conocer es en que tiempo una población determinada se duplica, para lo anterior se plantea
+la siguiente ecuación que esta basada en la tasa de crecimiento exponencial:  
+
+_P_t = Población Inicial_  
+_P_t+n = Población final_  
+_r = Tasa de crecimiento exponencial_  
+_n = Tiempo_  
+
+   P_t+n = P_t*e(r*n)   _Tasa de crecimiento exponencial_  
+   
+  Para conocer cuando se duplica la población necesitamos despejar *n* porque queremos conocer cuantos años tarda
+   una población en duplicarse!!!  
+   
+   _P_t+n/P_t=e(r*n)_  
+     _Ln(P_t+n/P_t)=r*n_  
+   
+   _P_t+n/P_t = 2_  
+   
+   _2 = e(r*n)_  
+   _r = 0.01399829_  
+   _Ln 2 = (r*n)_  
+   _0.6931 = (0.01399829)*n_  
+   _n = 0.6931/0.01399829_  
+   _n = 69.31/1.399829_  
+   _n = 49.51319054_  
+   
+   Si tenemos una tasa de crecimiento de 1.399829 entonces el tiempo de duplicación de nuestra población
+   será de 49.51 años  
+   
+   
+   **_Ejercicio_**  
+   Queremos conocer en que tiempo se va aduplicar la población en México con la tasa de crecimiento
+   del año 1970... Sabemos que la tasa de crecimiento era de 3.1  
+   Tenemos que en 1970 había 50.6 mill de personas  
+   ¿En cuanto tiempo en México tendríamos 100 millones de personas con una tasa de crecimiento de 3.1?  
+   
+   _R = 22.29_  
+   
+   
+En el año 2000 la tasa de crecimiento era de 1.4, en México había en el año 2000 99 mill  
+   ¿En cuanto tiempo en México tendríamos 100 millones de personas con una tasa de crecimiento de 3.1?  
+   _R 49.51319_  
+   
+
+# **Dinámica Demográfica**  
+   
+En la dinamica demografica se relaciona con el tamaño, la composicion, las perdidas y ganancias de la población.  
+  En el tamaño se refiere a la canidad de personas que existen en un territorio en n tiempo determinado.  
+  La composición de una población se refiere al sexo, grupos de edad (caracteristicas de una población)
+  Las perdidas y ganancias se vinculan con la fecundidad, mortalidad (perdidas) y la migración.  
+  
+## **TASAS BRUTAS EN LA POBLACIÓN**  
+  
+Una tasa bruta como su nombre lo indca, no considera la composicion de la población (sexo, edad, uniones, matrimonios)  
+   La vamos a definir de la siguiente manera:  
+      _TB= Evento / Población media_  
+      
+      La población media se define como el promedio de la población durante un periodo de tiempo.  
+    
+      La población a mitad de año... normalmente se relaciona con los datos del censo... y se asocia a conocer la población a mitad de año (30 de junio).  
+      
+      
+      Tenemos la población del año 2004 es de 293,657,000 y la de 2005 es de 296,410,000  
+      Entonces la población media del año 2004 - 2005 es la siguiente:  
+      _Pmed = (293,657,000 + 296,410,000)/2_  
+      _Pmed = 295033500_  
+      
+Calcular tasas brutas de los siguientes eventos:  
+
+  **Evento:** 
+          _Nacimientos ... 4129000_  
+          _Muertes ... 2425000_  
+          _Inmigración ... 1122000_  
+          _Emigración ... 73000_  
+          
+    _TBN = 13.99 POR CADA 1000 PERSONAS EN ESTADOS UNIDOS EN EL PERIDO 2004 - 2005 NACEN 14 PERSONAS_  
+    _TBM = 0.008219*(100) POR CADA 1000 PERSONAS EN ESTADOS UNIDOS EN EL PERIODO 2004 - 2005 SE MUEREN 8 PERSONAS_  
+    _TBI = 0.3802*(100)=3.8_  
+    _TBE = 0.00024*(100)=2.4_  
+           _0.00024*(100,000)= 24 POR CADA 100,000 PERSONAS EN ESTADOS UNIDOS EN EL PERIDO 2004 - 2005 EMIGRAN 24_  
+
+
+### **_TASAS ESPECIFICAS_**  
+
+Estas tasas si tienen relación con las caracteristicas poblacionales (sexo, grupos de edad)  
+
+El planteamiento de las tasas especificas es el siguiente:  
+  
+  _TE^i = Evento^i / Población^i_  
+  _TE^i = Tasa especifica de un evento con la caracteristica i (15-19)_  
+  _E^i= Es el número del evento de caracteristica i (15-19)_  
+  _Población^i =Es la población media con caracteristicas i (15-19)_  
+   
+   
+
+### **_PROPORCIÓN DE SEXOS_**  
+
+Este es otro indicado demografico que permite conocer la cantidad de hombres que existen con relación a las mujeres.  
+
+La proporción de sexos es un indicador que muestra el balance entre el numero de hombres y mujeres.  
+Por ejemplo, se puede calcular la proporción masculina y se calcula dividiendo el numero de hombres entre el número de mujeres. Se define de la siguiente manera:  
+
+_PS^i = Hombres^i / Mujeres^i_  
+_**BRASIL**_  
+_Hombres (0 a 4 años) en 2008 = 8226630_  
+_Mujeres (0 a 4 años) en 2008 = 7976611_  
+
+_**ITALIA**_  
+_Hombres (0 a 4 años) en 2008 = 1453690_  
+_Mujeres (0 a 4 años) en 2008 = 1373687_  
+
+   _PS^(0 A 4) = (8226630 / 7976611) = 1.031 BRASIL_  
+Para mejor interpretación multiplicamos por 100 y tendriamos que en Brasil en el grupo de edad de 0 a 4 años hay 103 hombres por cada 100 mujeres.  
+  
+   _PS^(0 A 4) = (1453690 / 1373687) = 1.058 ITALIA_
