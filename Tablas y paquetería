@@ -1,0 +1,35 @@
+---
+title: "Tablas y paquetería"
+author: "Aldama Cintia"
+date: '2022-03-18'
+output: html_document
+---
+
+```{r cars}
+summary(cars)
+
+install.packages("printr")
+require(printr)
+a<- c(1,2,3)
+b<- c("a","b","c")
+data <- data.frame(a,b)
+table(data)
+
+```
+
+
+
+
+
+############ 2020 ##############
+ent <- c("edomex","cdmx","chiap")
+nac <- c(184447,65703,98098)
+def <- c(131133,132751,38662)
+CN <- nac - def
+
+inmI <- c()
+emiI <- c()
+inminternos <- c(5190562,1679063,174961)
+Eminternos <- c(1344291,4955432,678362)
+CSi <- inminternos-Eminternos
+CSi
