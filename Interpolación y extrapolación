@@ -1,0 +1,44 @@
+---
+title: "Interpolación"
+author: "Aldama Cintia"
+date: '2022-03-27'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+# **Interpolación y Extrapolación**  
+
+Despues de calcular la tasa de crecimiento exponencial es decir de r con esta información se podria calcular
+la cantidad de población en un país, región dentro del periodo estimado de la tasa de crecimiento.  
+
+Por ejemplo, si estimamos una tasa de crecimiento exponencial de la población en el periodo 2004 a 2011
+nosotros podriamos calcular la cantidad de población dentro de ese periodo en cualquier tiempo a tráves
+del método de interpolación, si nosotros quisieramos calcular la población fuera de ese periodo el método
+para este cálculo se llama extrapolación y se plantea de la siguiente manera:  
+
+**_Ejemplo:_**  
+
+Población inicial del año 2005, 30 de junio  
+Queremos calvular la poblacion del 31 de diciembre de 2008  
+Tenemos una tasa de crecimiento de 0.01399829  
+
+**_EJEMPLO DE INTERPOLACIÓN_**  
+POB (32.DIC.2008) = ????????  
+POB (30.JUN.2005) = 1101318000  
+POB (30.JUN.2011) = 1197813000  
+
+POB (31.DIC.2008) = 1101318000 * e^(0.01399829*3.5) = 1,156,619,654  
+POB (31.DIC.2008) = 1,156,619,654  
+
+_P_t+n=P_t*e^(r*n)_  
+_r=Ln(P_t+n/P_t)/n_  
+
+**_EJEMPLO DE EXTRAPOLACIÓN_**  
+
+POB (1.ABR.2000) = 1101318000 * e^(0.01399829*(-1914/365)) = 1,023,371,852
