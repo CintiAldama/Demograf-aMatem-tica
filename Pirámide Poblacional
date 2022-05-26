@@ -1,0 +1,51 @@
+---
+title: "Piramide"
+author: "Aldama Cintia"
+date: "`r Sys.Date()`"
+output: html_document
+---
+```{r cars}
+
+ags <- read.csv(file.choose())
+require(dplyr)
+agsfem2 <- ags  %>%
+  as_tibble ()  %>%
+  mutate (gpoeda= case_when(EDAD >= 0 & EDAD <= 4 ~ 1,EDAD >=5 & EDAD <= 9 ~ 2,EDAD >=10 & EDAD <= 14 ~ 3,EDAD >=15 & EDAD <= 19 ~ 4,EDAD >=20 & EDAD <= 24 ~ 5,EDAD >=25 & EDAD <= 130 ~ 6,EDAD == 999 ~ 7), conyu = case_when ( SITUA_CONYUGAL==1 | SITUA_CONYUGAL==5 & SITUA_CONYUGAL==7 ~1, SITUA_CONYUGAL>=2 & SITUA_CONYUGAL<=4 ~2, SITUA_CONYUGAL==8 ~3, SITUA_CONYUGAL==9 ~4))%>%
+  filter (SEXO == 3 & (EDAD >= 50 & EDAD <= 130)) %>%
+select (SEXO, EDAD, SITUA_CONYUGAL, conyu, gpoedad)
+table (agsfem$SEXO)
+table (agsfem$EDAD)
+  
+table (ags$gpoeda)
+
+ags <- ags %>%
+as_tibble() %>%
+mutate(conyu = case_when ( SITUA_CONYUGAL==1 | SITUA_CONYUGAL==5 & SITUA_CONYUGAL==7 ~1, SITUA_CONYUGAL>=2 & SITUA_CONYUGAL<=4 ~2, SITUA_CONYUGAL==8 ~3, SITUA_CONYUGAL==9 ~4))
+table(ags$conyu)
+
+base2 <-ags %>%
+  as_tibble () %>%
+  filter (MUN == 1 | MUN == 2)
+
+install.packages("questionr")
+require(questionr)
+
+wtd.table (ags$SEXO, weights = ags$FACTOR)
+wtd.table ()
+
+
+
+install.packages ("pyramid")
+require (pyramid)
+
+  hombres <- c(60,50,40,30,25,20,15,10)
+  names(hombres) <- c('0-9','10-19','20-29','30-39','40-49','50-59','60-69','70 y+')
+  mujeres <- c(80,70,50,30,28,23,18,15)
+  
+  ## Gráfica de piramide
+pyramids(Left=hombres,Llab="Hombres",Right=mujeres,Rlab="Mujeres", Clab = "Grupo de edad" ,Laxis=c(0,25,50,75,100), Csize = 0.8, main="Gráfica 1. Ejemplo de piramide poblacional", Lcol="light blue", Rcol="purple")
+
+
+
+summary(cars)
+```
