@@ -1,0 +1,79 @@
+---
+title: "Ejercicios"
+author: "Aldama Cintia"
+date: '2022-03-30'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+2020 = 128,900,000
+2019 = 127,600,000
+
+Población Media
+2020 = 128,900,000
+
+
+Naciminetos = 24,831
+TBN_2020 = 24,831/128,900,000
+         = 0.0001926377
+
+
+Muertos = 18,707
+TBM_2020 = 18,707/128,900,000
+         = 0.000145128
+
+
+Inmigrantes = 500,693
+TBI_2020 = 500,693/128,900,000
+         = 0.003884352
+
+
+Emigrantes = 220,687
+TBE_2020 = 220,687/128,900,000
+         = 0.001712079
+
+
+Entidades <- c ("Aguascalientes", "Edo. Mex.", "Chiapas")
+
+Tbn <- c (0.0142886, 0.01080, 0.03949243)
+Tbm <- c (0.0069605, 0.0089, 0.02247131)
+Tbi <- c (0.1939034, 0.03054, 0.04490611)
+Tbe <- c (0.101438, 0.079, 0.1270692)
+
+base <- data.frame (Entidades, Tbn, Tbm, Tbi, Tbe)
+
+base1 <- data.frame (Entidades, base [,2:5]*100)
+
+
+#### PROPORCIÓN DE SEXOS AL NACIMIENTO
+
+La proporción de sexos al nacimiento se define de la siguiente manera:
+
+    PSN = nac_h / nac_m
+
+PSN_mx = 828944 / 800264 = 1.03 ..... Multiplico por 100
+PSN_mx = 103 .... EN MÉXICO EN EL AÑO 2020 NACEN 103 NIÑOS POR CADA 100 NIÑAS
+
+
+
+#### PROPORCIÓN DE NIÑOS POR MUJER
+
+PNM = POB_<5años / pobfem
+POB_<5años = 2,827,377
+pobfem_15-44 = 23,855,033
+
+PNM = 2,827,377 / 23,855,033
+PNM = 0.1185233 * 100 = 11.85233
+
+
+#### TASA DE DEPENDENCIA
+La tasa de dependencia se relaciona a las personas
+que tienen más posibilidades de ser dependientes
+
+TD = (pob_0-14 + pob_65ymas) / (pob_15-64)
