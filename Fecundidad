@@ -1,0 +1,96 @@
+---
+title: "Fecundidad"
+author: "Aldama Cintia"
+date: '2022-04-20'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r cars}
+summary(cars)
+
+FECUNDIDAD
+
+En la demografía existen dos conceptos que es necesario diferenciar.
+
+Fecundidad se refiere al número de hijos que tienen las mujeres.
+Fertilidad se refiere a ña capacidad biologica de la mujer de tener hijos.
+
+Factores que impactan en la fecundidad de las mujeres:
+  Economía
+  Estado civil
+  Fisiologicos
+  Educación
+  Cultura
+  Familia
+  Morbilidad
+  Acceso a anticonceptivos
+  
+  
+Tasa Bruta de Natalidad
+ TBN = Nacimientos / Población 
+Normalmente esta TBN se utiliza de manera anual y se interpreta en miles de personas.
+
+Ejemplo:
+  Nacimientos = 470,900
+  Población = 27,720,000
+  
+  --> TBN = 470,900 / 27,720,000
+      TBN = 0.01698773
+  --> La TBN también se puede interpretar multiplicandola por 1,000, es decir, que en esta población nacen 17 niños por cad mil personas.
+      
+
+Fecundidad
+¿Cuantos hijos puede tener una mujer durante su periodo de fertilidad?
+  - Suponemos que inicia a los 15 y termina a los 45 años.
+
+Años fertiles = 30
+
+Años fertiles* 12 meses de un año = 30*12
+                                  = 360 meses fertiles
+
+Meses de fertilidad / Meses de embarazo = 360/9
+                                        = 40 Numero de hijos
+
+Tasas especificas o generales de fecundidad
+La tasa de fecundidad se define de la siguiente manera:
+  tef = Nacimientos^i / (Pob. femenina)^i
+
+Ejemplo:
+   Edad     Nacidos vivos     Pob. femenina     tef (por mil)
+   15-19       14,687           2,974,000          4.938467
+   20-24      116,809           3,404,000         34.31522
+   25-29      307,767           3,688,000         83.45092
+   30-34      389,795           4,286,000         90.9461
+   35-39      209,707           4,776,000         43.9085
+   40-44       31,270           4,243,000          7.369786
+
+   
+Tasa general de fecundidad
+ --> TGF = (Σ i=14-44)nacimientos^i / (Σ i=14-44) Pob. femenina^i
+
+Ejemplo:
+  --> 1,07,035/ 23,371,000 = 0.04578
+   --> 45.78 nacimientos por cada mil mujeres en edad de 14 a 44 años
+
+
+
+Ejercicio: Calcular la tef y TGF para México en el año 2010
+
+Edad   Nacidos   Poblacion    TEF(por mil)
+        Vivos     Femenina
+15-19   464102    5505991      84.29037
+20-24   748723    5079067      147.4135
+25-29   624181    4582202      136.2186
+30-34   418695    4444767      94.19954  
+35-39   205503    4328249      47.47948
+40-44   49430     3658904      13.50951 
+
+  TGF= 2510634 / 27599180 = 0.0909677 * 1000
+  TGF = 90.9677
+
+
+```
